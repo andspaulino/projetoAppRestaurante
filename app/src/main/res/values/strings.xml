@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppRestaurante</string>
+    <string name="nome_restaurante">Restaurante do Anderson</string>
+    <string name="botao_fazer_pedido">Registrar Pedido</string>
+    <string name="botao_consulta_horas">Consultar Total de Horas</string>
+    <string name="botao_enviar_mensagem">Enviar Mensagem</string>
+    <string name="mensagem_para_enviar">Escreva aqui sua mensagem</string>
 </resources>

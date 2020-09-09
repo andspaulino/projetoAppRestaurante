@@ -6,13 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".RestauranteMainActivity">
 
 
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Restaurante do Anderson"
+            android:text="@string/nome_restaurante"
             android:layout_marginTop="50dp"
             android:layout_marginRight="60dp"
             android:layout_marginBottom="20dp"
@@ -29,7 +29,7 @@
             android:textAlignment="center"
     />
     <Button
-            android:text="Registrar Pedido"
+            android:text="@string/botao_fazer_pedido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bFazerPedido"
@@ -39,13 +39,23 @@
             android:layout_marginLeft="60dp"
     />
     <Button
-            android:text="Consultar Total de Horas"
+            android:text="@string/botao_consulta_horas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bTotalHoras"
             android:layout_marginRight="60dp"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="60dp"
+    />
+    <Button
+            android:text="@string/botao_enviar_mensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bAcessarMensagem"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="onAcessarMensageiro"
     />
 
 
