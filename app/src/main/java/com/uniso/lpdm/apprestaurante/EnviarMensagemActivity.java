@@ -14,7 +14,7 @@ public class EnviarMensagemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_enviar_mensagem);
     }
 
-    public void onEnviarMensagem(View view) {
+    public void onClickEnviarMensagem(View view) {
         EditText editText = (EditText)findViewById(R.id.editMensagem);
         String mensagem = editText.getText().toString();
 

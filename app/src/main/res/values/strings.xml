@@ -1,8 +1,13 @@
 <resources>
-    <string name="app_name">AppRestaurante</string>
-    <string name="nome_restaurante">Restaurante do Anderson</string>
+    <string name="app_name">iMeal</string>
+    <string name="nome_restaurante">iMeal</string>
     <string name="botao_fazer_pedido">Registrar Pedido</string>
-    <string name="botao_consulta_horas">Consultar Total de Horas</string>
+    <string name="botao_acessar_timer">Acessar Registro de Horas</string>
+    <string name="botao_acessar_mensageiro">Acessar Mensageiro</string>
     <string name="botao_enviar_mensagem">Enviar Mensagem</string>
     <string name="mensagem_para_enviar">Escreva aqui sua mensagem</string>
+    <string name="botao_iniciar_expediente">Iniciar Expediente</string>
+    <string name="botao_pausar">Pausar Expediente</string>
+    <string name="botao_encerrar_expediente">Encerrar Expediente</string>
+    <string name="botao_voltar_tela">Voltar Tela Inicial</string>
 </resources>

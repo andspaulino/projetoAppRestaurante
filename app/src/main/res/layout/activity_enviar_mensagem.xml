@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".EnviarMensagemActivity"
-        android:padding="16dp"
+        android:padding="20dp"
         android:orientation="vertical">
 
     <EditText
@@ -24,6 +24,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="@string/botao_enviar_mensagem"
-            android:onClick="onEnviarMensagem"
+            android:onClick="onClickEnviarMensagem"
     />
 </LinearLayout>

@@ -13,27 +13,20 @@ public class RestauranteMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_restaurante);
-
-        final TextView tvM = (TextView)findViewById(R.id.tvMessage);
-        final Button btFP = (Button)findViewById(R.id.bFazerPedido);
-        final Button btTH = (Button)findViewById(R.id.bTotalHoras);
-
-        btFP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvM.setText("Registrando Pedido");
-            }
-        });
-
-        btTH.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvM.setText("Total de Horas");
-            }
-        });
     }
 
-    public void onAcessarMensageiro(View view) {
+    public void onClickRegistrarPedido(View view) {
+        TextView tvM = (TextView)findViewById(R.id.tvMessage);
+        tvM.setText("Total de Horas");
+    }
+
+    public void onClickConsultarTotalHoras(View view) {
+        Intent acessarTimer = new Intent(this, TimerActivity.class);
+
+        startActivity(acessarTimer);
+    }
+
+    public void onClickAcessarMensageiro(View view) {
         Intent enviarMensagem = new Intent(this, EnviarMensagemActivity.class);
 
         startActivity(enviarMensagem);

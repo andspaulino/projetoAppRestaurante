@@ -7,59 +7,57 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp"
-        tools:context=".RestauranteMainActivity">
-
-
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/nome_restaurante"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="60dp"
-            android:textAlignment="center"
-    />
+        tools:context=".TimerActivity">
 
     <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/txtTempo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text=""
-            android:layout_margin="50dp"
-            android:id="@+id/tvMessage"
-            android:textAlignment="center"
-    />
-    <Button
-            android:text="@string/botao_fazer_pedido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bFazerPedido"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="60dp"
-            android:onClick="onClickRegistrarPedido"
-    />
-    <Button
-            android:text="@string/botao_acessar_timer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bTotalHoras"
-            android:layout_marginRight="60dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="60dp"
-            android:onClick="onClickConsultarTotalHoras"
-    />
-    <Button
-            android:text="@string/botao_acessar_mensageiro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bAcessarMensagem"
-            android:layout_marginRight="60dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="60dp"
-            android:onClick="onClickAcessarMensageiro"
+            android:textSize="60sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
     />
 
+    <Button
+            android:text="@string/botao_iniciar_expediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bIniciarExpediente"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="onClickIniciar"
+    />
+    <Button
+            android:text="@string/botao_pausar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bPausar"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="onClickParar"
+    />
+    <Button
+            android:text="@string/botao_encerrar_expediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bEncerrarExpediente"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onClickZerar"
+    />
 
+    <Button
+            android:text="@string/botao_voltar_tela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bVoltarTela"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="onClickMudarTela"
+    />
 </LinearLayout>
